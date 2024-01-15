@@ -1,0 +1,12 @@
+<div>
+    <h1>Parrent Cpmponent</h1>
+    Parrent Cpmponent : <input type="text" #Pcomponent (keyup)="0"/>
+    Parrent Cpmponent2 : <input type="text" #Pcomponent2 (keyup)="0"/>
+    
+    <app-child [Pdata]="Pcomponent.value"></app-child>
+    <app-child [Pdata]="Pcomponent2.value"></app-child>
+    <app-child [Cdata]= 'parrentdata'></app-child>
+
+</div>
+<h1>for HTTP Service</h1>
+<app-past></app-past>
